@@ -39,12 +39,11 @@ Heatmap/
 
 ### Dependencies
 
-- Python (see Protobuffer deserialization module for required version)
-- pandas
-- folium
-- h3
-- numpy
-- protobuf (for decoding raw event data)
+- Pandas
+- Folium
+- H3
+- Numpy
+- Protobuf (for decoding raw event data, optional if MSA uses their own deserialization)
 
 Install with:
 
