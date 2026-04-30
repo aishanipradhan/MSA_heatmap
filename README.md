@@ -126,6 +126,8 @@ Adds the legend, dynamic dataset summary box, filter panel (metric / gas type / 
 
 Top-level orchestration function. Filters to one customer, defines the three time windows anchored on the latest activity, builds aggregations and layers for each, attaches the UI, and saves the final interactive HTML.
 
+The current Folium map uses CartoDB Voyager tiles. Another option is OpenStreetMap, which can provide better road detail, though public tile servers may impose usage limits for large-scale applications.
+
 ## Usage
 
 From `implement.ipynb`:
