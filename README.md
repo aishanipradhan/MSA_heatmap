@@ -157,7 +157,7 @@ The H3 resolution is configurable. Resolution 9 (~0.1 km² hexagons) targets ind
 
 Each run produces a self-contained interactive HTML file. Open it in Safari to explore the heatmap — no server required. The map includes:
 
-- Base tiles via OpenStreetMap (this requires HTML must be opened using Safari, Chrome might cause issues)
+- Base tiles via OpenStreetMap (this requires HTML to be opened using Safari, Chrome might cause issues)
 - All layers, controls, and tooltips embedded in the single file
 
 ## Authors
