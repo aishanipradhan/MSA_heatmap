@@ -126,7 +126,7 @@ Adds the legend, dynamic dataset summary box, filter panel (metric / gas type / 
 
 Top-level orchestration function. Filters to one customer, defines the three time windows anchored on the latest activity, builds aggregations and layers for each, attaches the UI, and saves the final interactive HTML.
 
-The current Folium map uses CartoDB Voyager tiles. Another option is OpenStreetMap, which can provide better road detail, though public tile servers may impose usage limits for large-scale applications.
+The current Folium map uses OpenStreetMap tiles. While this works well when the output HTML file is opened in Safari, it can run into limitations for large-scale applications in Chrome. An alternative is to use CartoDB Voyager tiles, which offer less road detail but display reliably in both Safari and Chrome.
 
 ## Usage
 
@@ -155,9 +155,9 @@ The H3 resolution is configurable. Resolution 9 (~0.1 km² hexagons) targets ind
 
 ## Output
 
-Each run produces a self-contained interactive HTML file. Open it in any modern browser to explore the heatmap — no server required. The map includes:
+Each run produces a self-contained interactive HTML file. Open it in Safari to explore the heatmap — no server required. The map includes:
 
-- Base tiles via CartoDB (free, no API key)
+- Base tiles via OpenStreetMap (this requires HTML must be opened using Safari, Chrome might cause issues)
 - All layers, controls, and tooltips embedded in the single file
 
 ## Authors

@@ -138,7 +138,8 @@ def generate_customer_heatmap(data, customer_id, output_file, h3_res=9):
     # 4. Initialize map
     center_df = results["all"]["alarms_agg"]
     center = [center_df["lat"].median(), center_df["lon"].median()]
-    m = folium.Map(location=center, zoom_start=13, tiles="CartoDB Voyager")
+    # Note: "tiles" can be changed to "CartoDB Voyager" if OpenStreetMap causes issues
+    m = folium.Map(location=center, zoom_start=13, tiles="OpenStreetMap")
 
     # 5. Add timeframe-specific map layers
     bundle_registry = {}
